@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bgcolor: rgb(126, 195, 197);
+  --headertext: rgb(80, 80, 80);
+  --navlinks: rgb(80, 80, 80);
+  --hovercolor: rgb(204, 71, 216);
+  --bordercolor: rgb(1, 124, 97);
+  --activelink: rgb(241, 235, 241);
+}
+
+body {
+  font-family: "Arial" sans-serif;
+}
+
+.header {
+  background: var(--bgcolor);
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 1.2%;
+  border-bottom: 3px solid var(--bordercolor);
+}
+
+.headerimg {
+  width: 10%;
+  border-radius: 100%;
+  border: 3px solid var(--bordercolor);
+}
+
+h1 {
+  font-size: 250%;
+  font-weight: 600;
+  color: var(--headertext);
+  margin-left: 0%;
+}
+
+h2 {
+  font-size: 225%;
+  color: var(--headertext);
+}
+
+.navul {
+  display: flex;
+  min-width: 300px;
+  font-size: 150%;
+  list-style: none;
+}
+
+.navlink {
+  color: var(--navlinks);
+  /* font-weight: bold; */
+  padding: 20px;
+  text-decoration: none;
+}
+
+.navlinkactive {
+  color: var(--activelink);
+  text-decoration: underline;
+  padding: 20px;
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--hovercolor);
+}
+
+main {
+  max-width: 90%;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.header-image {
+  width: 100%;
+  display: flex;
+  height: 400px;
+  position: relative;
+}
+
+.header-image img {
+  width: 100%;
+  height: 400px;
+  border-bottom: 3px solid var(--bordercolor);
+}
+
+.header-image p {
+  position: absolute;
+  font-size: 220%;
+  bottom: 0px;
+  right: 0px;
+  background: var(--bgcolor);
+  padding: 20px;
+  border: 3px solid var(--bordercolor);
+  border-radius: 20px 0 0 0;
+  color: var(--headertext);
+}
+
+.container {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  display: flex;
+  padding: 20px;
+  padding-left: 0;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 20px;
+}
+
+.container h2 {
+  border-right: 3px solid var(--bordercolor);
+  padding-right: 15px;
+  flex: 0 0 15%;
+  text-align: right;
+  padding-left: 10px;
+}
+
+.container div {
+  flex: 0 0 77%;
+}
+
+#bigCard {
+  text-align: center;
+  border: 3px solid var(--bordercolor);
+  position: relative;
+  height: 400px;
+  flex-basis: 100%;
+  border-radius: 15px;
+}
+
+#bigCard #linkbox:hover {
+  color: var(--hovercolor);
+}
+
+#bigCard img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+#bigCard #linkbox {
+  background-color: var(--bgcolor);
+  position: absolute;
+  left: 0px;
+  bottom: 30px;
+  font-size: 200%;
+  padding: 30px;
+  border-radius: 0 20px 20px 0;
+  text-decoration: underline;
+  border: 3px solid var(--bordercolor);
+  border-left: 0;
+  color: var(--headertext);
+}
+
+.card {
+  display: flex;
+  margin: 4%;
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid var(--bordercolor);
+  flex-wrap: wrap;
+  display: inline-block;
+  border-radius: 15px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.card .linkboxes {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  font-size: 200%;
+  background-color: var(--bgcolor);
+  padding: 30px;
+  border-radius: 0 20px 20px 0;
+  text-decoration: underline;
+  color: var(--headertext);
+  border: 3px solid var(--bordercolor);
+  border-left: 0;
+}
+
+.card .linkboxes:hover {
+  color: var(--hovercolor);
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bottom a {
+  font-size: 175%;
+  padding: 5px;
+  text-decoration: underline;
+  color: var(--headertext);
+}
+
+.bottom a:hover {
+  color: var(--hovercolor);
+}
+
+@media screen and (max-width: 980px) {
+  body,
+  header,
+  .bottom {
+    flex-direction: column;
+  }
+
+  h1,
+  nav {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
