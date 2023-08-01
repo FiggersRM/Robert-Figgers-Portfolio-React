@@ -4,13 +4,13 @@ export default function NavTabs({ currentPage, handlePageChange }) {
     return (
         <ul className="navul">
           <li>
-            <a href="#AboutMe" onClick={() => handlePageChange('AboutMe')}className={currentPage === 'AboutMe' ? 'navlinkactive' : 'navlink'}>About Me</a>
+            <a href="#AboutMe" onClick={() => handlePageChange('About-Me')}className={currentPage === 'About-Me' ? 'navlinkactive' : 'navlink'}>About Me</a>
           </li>
           <li>
-            <a href="#Work" onClick={() => handlePageChange('Projects')} className={currentPage === 'Projects' ? 'navlinkactive' : 'navlink'}>Projects</a>
+            <a href="#Projects" onClick={() => handlePageChange('Projects')} className={currentPage === 'Projects' ? 'navlinkactive' : 'navlink'}>Projects</a>
           </li>
           <li>
-            <a href="#ContactMe" onClick={() => handlePageChange('Contact')} className={currentPage === 'Contact' ? 'navlinkactive' : 'navlink'}>Contact Me</a>
+            <a href="#ContactMe" onClick={() => handlePageChange('Contact-Me')} className={currentPage === 'Contact-Me' ? 'navlinkactive' : 'navlink'}>Contact Me</a>
           </li>
           <li>
             <a href='#Resume' onClick={() => handlePageChange('Resume')} className={currentPage === 'Resume' ? 'navlinkactive' : 'navlink'}>Resume</a>
