@@ -9,27 +9,23 @@ function Resume() {
     </div>
   <div className="frontEnd">
     <h2 style={{textDecoration: 'underline'}}>Front-End Skills:</h2>
-    <ul>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>jQuery</li>
-    <li>Bulma</li>
-    <li>Bootstrap</li>
-    <li>React</li>
-    </ul>
+    <p>HTML</p>
+    <p>CSS</p>
+    <p>JavaScript</p>
+    <p>jQuery</p>
+    <p>Bulma</p>
+    <p>Bootstrap</p>
+    <p>React</p>
   </div>
   <div className="backEnd">
     <h2 style={{textDecoration: 'underline'}}>Back-End Skills:</h2>
-    <ul>
-    <li>APIs</li>
-    <li>Node</li>
-    <li>Express</li>
-    <li>mySQL, Sequelize</li>
-    <li>MongoDB, Mongoose</li>
-    <li>MERN</li>
-    <li>GraphQL</li>
-    </ul>
+    <p>APIs</p>
+    <p>Node</p>
+    <p>Express</p>
+    <p>mySQL, Sequelize</p>
+    <p>MongoDB, Mongoose</p>
+    <p>MERN</p>
+    <p style={{marginBottom: '20px'}}>GraphQL</p>
   </div>
   </>
     );

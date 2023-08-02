@@ -34,7 +34,6 @@ body {
   width: 10%;
   border-radius: 100%;
   border: 3px solid var(--bordercolor);
-  margin-left: 150px;
 }
 
 h1 {
@@ -140,29 +139,18 @@ a:hover {
   color: var(--bgcolor)
 }
 
-.frontEnd ul {
-  width: 25%;
-  margin: auto;
-}
-
-.backEnd ul {
-  width: 25%;
-  margin: auto;
-  padding-right: 30px;
-}
-
-.frontEnd li {
+.frontEnd p {
   width: 50%;
   font-size: 120%;
   margin: auto;
-  padding-left: 0;
+  padding: 5px;
 }
 
-.backEnd li{
+.backEnd p{
   width: 100%;
   font-size: 120%;
   margin: auto;
-  padding-left: 0;
+  padding: 5px;
 }
 
 .card {
@@ -209,6 +197,31 @@ a:hover {
   padding-bottom: 20px;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
+}
+
+.bigCont {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 6rem;
+}
+
+.footer {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: var(--bgcolor);
+  padding: 20px;
+  align-items: center;
+  border-top: 3px solid var(--bordercolor);
+}
+
+.icon {
+  font-size: 300%;
+  color: var(--headertext);
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media screen and (max-width: 980px) {
