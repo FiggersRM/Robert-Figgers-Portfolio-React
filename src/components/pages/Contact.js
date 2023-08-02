@@ -41,6 +41,9 @@ function Contact() {
         setErrorMessage("Invalid Email Address");
         return;
       }
+      else {
+        setErrorMessage('')
+      }
     } else if (inputType === "message") {
       setMessage(inputValue);
     } else {
