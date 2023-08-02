@@ -128,7 +128,7 @@ main {
 }
 
 .ContactForm {
-  border: 3px solid var(--bordercolor);
+  /* border: 3px solid var(--bordercolor); */
   width: 50%;
   margin: auto;
   margin-top: 20px;
