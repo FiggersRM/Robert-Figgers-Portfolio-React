@@ -180,7 +180,7 @@ a:hover {
   padding: 10px;
   border-radius: 10px 10px 0px 0px;
   width: 100%;
-  text-decoration: underline;
+  text-decoration: none;
   color: var(--headertext);
   border-bottom: 3px solid var(--bordercolor);
 }
@@ -222,6 +222,16 @@ a:hover {
   color: var(--headertext);
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.ghIcon {
+  text-decoration: none;
+  text-align: center;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  font-size: 120%;
+  color: var(--headertext)
 }
 
 @media screen and (max-width: 980px) {
