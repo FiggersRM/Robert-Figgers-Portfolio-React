@@ -59,14 +59,14 @@ function Projects() {
               <a  class="linkboxes" href="https://drive.google.com/file/d/1VckhwUFNlwP1ngZ7dBG7F6JJBe5k5Dfw/view?usp=drive_link">Social Network API</a><a href="https://github.com/FiggersRM/Social-Network-API" className="ghIcon"> <FaGithub /></a>
     </div>
     <div className="card">
-    <a href="https://github.com/FiggersRM/Eat-It">
+    <a href="https://eatit-5de928edb7f4.herokuapp.com/">
               <img
                 src={EI}
                 alt="This is a logo for the Eat It application. It features a green face, similar to PacMan, with an arrow going into its mouth. Underneath the logo is the name of the application, Eat It."
                 style={{width: 205, paddingTop: 40}}
               />
               </a>
-              <a  class="linkboxes" href="https://github.com/FiggersRM/Eat-It">Eat It</a><a href="https://github.com/FiggersRM/Eat-It" className="ghIcon"> <FaGithub /></a>
+              <a  class="linkboxes" href="https://eatit-5de928edb7f4.herokuapp.com/">Eat It</a><a href="https://github.com/FiggersRM/Eat-It" className="ghIcon"> <FaGithub /></a>
     </div>
   </>
     );
