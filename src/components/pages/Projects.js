@@ -37,7 +37,7 @@ function Projects() {
                 style={{borderRadius: '5px'}}
               />
               </a>
-              <a  class="linkboxes" href="https://drive.google.com/file/d/1bsA68kYsIEaknKSGiEAXmy7p6yHFG4O-/view?usp=drive_link">E-Commerce Serve</a><a href="https://github.com/FiggersRM/E-Commerce-Back-End" className="ghIcon"><FaGithub /></a>
+              <a  class="linkboxes" href="https://drive.google.com/file/d/1bsA68kYsIEaknKSGiEAXmy7p6yHFG4O-/view?usp=drive_link">E-Commerce Server</a><a href="https://github.com/FiggersRM/E-Commerce-Back-End" className="ghIcon"><FaGithub /></a>
     </div>
     <div className="card">
     <a href="https://figgersrm.github.io/5-Day-Weather-Forecast-C6/">
