@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { useForm } from "@formspree/react";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
   const [state, handleSubmit] = useForm("xqkveppl");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [name, setName] = useState("");
-  const [errorMessage, setErrorMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState("");
 
   if (state.succeeded) {
     return <p>Thanks for contacting me!</p>;
@@ -22,12 +23,33 @@ function Contact() {
       setErrorMessage("Invalid Email Address");
       return;
     }
-    alert("Thank you for contacting me!");
-
-    setEmail("");
-    setName("");
-    setMessage("");
-    setErrorMessage("");
+    const templateparams = {
+      from_email: email,
+      from_name: name,
+      message: message,
+    };
+    emailjs
+      .send(
+        "service_uoswwlr",
+        "template_by001s9",
+        templateparams,
+        "NpMALbO-nLYQDyBW9"
+      )
+      .then(
+        (response) => {
+          console.log("Success");
+          alert(
+            "Thank you for contacting me! Please allow 24 hours for an email response."
+          );
+          setEmail("");
+          setName("");
+          setMessage("");
+          setErrorMessage("");
+        },
+        (err) => {
+          console.log(err);
+        }
+      );
   };
 
   const handleInputChange = (e) => {
@@ -40,9 +62,8 @@ function Contact() {
       if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(inputValue)) {
         setErrorMessage("Invalid Email Address");
         return;
-      }
-      else {
-        setErrorMessage('')
+      } else {
+        setErrorMessage("");
       }
     } else if (inputType === "message") {
       setMessage(inputValue);
@@ -94,15 +115,15 @@ function Contact() {
           />
         </div>
         {message.length ? (
-              <span style={{ color: "red" }}></span>
-            ) : (
-              <span style={{ color: "red" }}>*</span>
-            )}
+          <span style={{ color: "red" }}></span>
+        ) : (
+          <span style={{ color: "red" }}>*</span>
+        )}
         <textarea
           id="message"
           name="message"
           value={message}
-          class="contactmessage"
+          className="contactmessage"
           placeholder="message"
           onChange={handleInputChange}
         />
@@ -112,7 +133,9 @@ function Contact() {
       </form>
       {errorMessage && (
         <div>
-          <p className="error-text" style={{color: 'red'}}>{errorMessage}</p>
+          <p className="error-text" style={{ color: "red" }}>
+            {errorMessage}
+          </p>
         </div>
       )}
     </div>
