@@ -5,7 +5,7 @@ function Resume() {
   return (
     <>
     <div className="resumeSpan">
-    <span className="resumeSpan">Please click <a href={myResume} download="Robert-Figgers-Resume">here</a> to download my resume</span>
+    <span className="resumeSpan">Please click <a href={myResume} download="Robert-Mitch-Figgers-Resume">here</a> to download my resume</span>
     </div>
   <div className="frontEnd">
     <h2 style={{textDecoration: 'underline'}}>Front-End Skills:</h2>
